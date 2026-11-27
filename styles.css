@@ -127,3 +127,30 @@
 .supporting-project .project-body{flex:1}
 @media(max-width:900px){.tool-highlights{grid-template-columns:repeat(2,minmax(0,1fr))}.live-preview-frame{height:620px}}
 @media(max-width:680px){.tool-highlights{grid-template-columns:1fr 1fr;gap:7px}.tool-highlights span{padding:10px;font-size:9px}.live-preview-heading{align-items:flex-start;flex-direction:column;gap:10px}.live-preview-heading strong{font-size:14px}.preview-tabs{margin-right:-4px}.preview-tab{padding:10px 12px;font-size:9px}.live-preview-frame{height:590px;border-radius:7px}.supporting-project-grid{grid-template-columns:1fr}.project-energy-feature .project-art{height:210px}.support-project-icon{height:110px}}
+
+
+/* Testimonials and real-world user validation */
+.testimonial-section{background:#f6f8fa}
+.testimonial-proofbar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:-4px 0 22px;padding:18px 21px;border:1px solid #dfe7ec;border-radius:11px;background:#fff}
+.google-rating{display:flex;align-items:center;gap:13px}
+.google-g{width:42px;height:42px;display:grid;place-items:center;border:1px solid #e4eaf0;border-radius:10px;color:#4285f4;font:800 25px Arial}
+.google-rating strong,.google-rating small{display:block}
+.google-rating strong{font:800 19px Manrope;color:#152b40}
+.google-rating strong span{color:#e5a900;font-size:15px;letter-spacing:.04em;margin-left:5px}
+.google-rating small{font-size:9px;color:#748397;margin-top:3px}
+.testimonial-proofbar>p{max-width:310px;margin:0;color:#7b8998;font-size:9px;line-height:1.65;text-align:right}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.quote-card{display:flex;flex-direction:column;min-height:265px;padding:21px 20px;border:1px solid #e0e7ec;border-radius:11px;background:#fff;box-shadow:0 10px 25px rgba(16,42,60,.045)}
+.quote-source{font-size:8px;letter-spacing:.13em;font-weight:800;color:#0b817d}
+.quote-stars{margin-top:13px;color:#e5a900;font-size:14px;letter-spacing:.08em}
+.quote-card blockquote{margin:13px 0 10px;color:#183249;font:700 15px/1.6 Manrope;letter-spacing:-.02em}
+.quote-context{margin:0 0 17px;color:#6d7d8e;font-size:10px;line-height:1.75}
+.quote-author{display:flex;flex-direction:column;gap:3px;margin-top:auto;padding-top:13px;border-top:1px solid #edf0f2}
+.quote-author b{font:800 10px Manrope;color:#21394e}
+.quote-author span{font-size:9px;color:#8290a0}
+.quote-product-link{margin-top:12px;color:#087f7b;font-size:9px;font-weight:800}
+.testimonial-footnote{margin-top:19px;padding:15px 17px;border-left:3px solid #0b8c83;border-radius:0 7px 7px 0;background:#eaf3f3;color:#5f7180;font-size:9px;line-height:1.75}
+.testimonial-footnote b{color:#203b50}
+.project-subtitle{margin:-7px 0 10px!important;color:#087f7b!important;font:800 11px Manrope!important;letter-spacing:.02em}
+@media(max-width:900px){.testimonial-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.testimonial-proofbar{align-items:flex-start;flex-direction:column}.testimonial-proofbar>p{text-align:left}.testimonial-grid{grid-template-columns:1fr}.quote-card{min-height:0;padding:19px}.quote-card blockquote{font-size:14px}}
