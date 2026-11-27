@@ -178,3 +178,5 @@
 .makoko-quote small{font-size:9px;line-height:1.6;color:#adc2cc}
 .makoko-side-note{padding-top:18px;border-top:1px solid #315467}.makoko-side-note b{font:800 12px Manrope;color:#fff}.makoko-side-note p{font-size:10px;line-height:1.8;color:#b3c7d1}
 @media(max-width:760px){.makoko-grid{grid-template-columns:1fr}.makoko-meta{grid-template-columns:1fr;gap:13px}.makoko-outcomes{grid-template-columns:1fr 1fr}}
+
+.youth-lead-art{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,#f9fcff,#e9f3ff);color:#12396d;text-align:center}.youth-lead-art span{font:800 30px/1 Manrope;letter-spacing:.03em}.youth-lead-art span b{color:#d39b16}.youth-lead-art small{font:800 8px Manrope;letter-spacing:.12em;color:#375a80}.evidence-text-note{display:block;font-size:9px;line-height:1.6;color:#91a0ad;margin-top:8px}
