@@ -38,3 +38,30 @@ if(previewFrame&&previewTabs.length){
     });
   }));
 }
+
+/* Filter credential gallery without hiding its full evidence register from assistive technology. */
+const credentialFilters=[...document.querySelectorAll('.credential-filter')];
+const expandedCredentials=[...document.querySelectorAll('.credential-expanded')];
+const credentialStatus=document.querySelector('.credential-filter-status');
+if(credentialFilters.length&&expandedCredentials.length){
+  credentialFilters.forEach(filter=>filter.addEventListener('click',()=>{
+    const category=filter.dataset.credentialFilter;
+    let visible=0;
+    expandedCredentials.forEach(card=>{
+      const show=category==='all'||card.dataset.credentialCategory===category;
+      card.hidden=!show;
+      if(show)visible++;
+    });
+    credentialFilters.forEach(button=>{
+      const active=button===filter;
+      button.classList.toggle('active',active);
+      button.setAttribute('aria-pressed',String(active));
+    });
+    if(credentialStatus){
+      const label=filter.textContent.trim();
+      credentialStatus.textContent=category==='all'
+        ? 'Showing all professional credentials and documented recognition.'
+        : 'Showing '+visible+' records in '+label+'.';
+    }
+  }));
+}
