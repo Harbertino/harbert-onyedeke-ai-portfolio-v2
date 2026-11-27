@@ -41,7 +41,7 @@ if(previewFrame&&previewTabs.length){
 
 /* Filter credential gallery without hiding its full evidence register from assistive technology. */
 const credentialFilters=[...document.querySelectorAll('.credential-filter')];
-const expandedCredentials=[...document.querySelectorAll('.credential-expanded')];
+const expandedCredentials=[...document.querySelectorAll('.credential-grid .credential-card')];
 const credentialStatus=document.querySelector('.credential-filter-status');
 if(credentialFilters.length&&expandedCredentials.length){
   credentialFilters.forEach(filter=>filter.addEventListener('click',()=>{
