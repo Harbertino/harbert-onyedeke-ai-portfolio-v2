@@ -180,3 +180,18 @@
 @media(max-width:760px){.makoko-grid{grid-template-columns:1fr}.makoko-meta{grid-template-columns:1fr;gap:13px}.makoko-outcomes{grid-template-columns:1fr 1fr}}
 
 .youth-lead-art{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,#f9fcff,#e9f3ff);color:#12396d;text-align:center}.youth-lead-art span{font:800 30px/1 Manrope;letter-spacing:.03em}.youth-lead-art span b{color:#d39b16}.youth-lead-art small{font:800 8px Manrope;letter-spacing:.12em;color:#375a80}.evidence-text-note{display:block;font-size:9px;line-height:1.6;color:#91a0ad;margin-top:8px}
+
+/* Expanded credential taxonomy and client-side filters */
+.credential-filters{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 10px}
+.credential-filter{border:1px solid #d5e0e6;border-radius:999px;padding:10px 15px;background:#fff;color:#506477;font:700 10px Manrope;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.credential-filter:hover,.credential-filter.active{background:#0b817d;border-color:#0b817d;color:#fff}
+.credential-filter:focus-visible{outline:3px solid #8ad9ce;outline-offset:2px}
+.credential-filter-status{margin:0 0 17px;color:#7b8998;font-size:9px}
+.credential-expanded[hidden]{display:none!important}
+.credential-logo.social{background:#e8f1ff;color:#2765a8}.credential-logo.business{background:#fff3df;color:#98610b}
+.credential-logo.comms{background:#e8f5f3;color:#087f7b}.credential-logo.speaking{background:#f3edff;color:#6c4c9e}
+.credential-logo.facilitator{background:#e9eff7;color:#355c82}.credential-logo.cyber{background:#e5eef3;color:#173f5a}
+.credential-logo.disaster{background:#fff0e8;color:#a35328}.credential-logo.youth{background:#e6f6f6;color:#087f7b}
+.credential-logo.local{background:#fff4dc;color:#936914}.credential-logo.award{background:#fcecf3;color:#a33363}
+.credential-logo span{font:800 13px Manrope;letter-spacing:-.04em}
+@media(max-width:680px){.credential-filters{gap:6px}.credential-filter{padding:9px 11px;font-size:9px}}
