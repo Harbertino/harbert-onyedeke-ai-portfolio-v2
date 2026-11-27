@@ -20,3 +20,21 @@ if(galleryButtons.length){
     viewer.showModal();
   }));
 }
+
+
+// Switch the embedded live NERDC preview between its four working tools.
+const previewFrame=document.getElementById('nerdc-live-preview');
+const previewTabs=[...document.querySelectorAll('.preview-tab')];
+if(previewFrame&&previewTabs.length){
+  previewTabs.forEach(tab=>tab.addEventListener('click',()=>{
+    const path=tab.dataset.preview;
+    if(!path)return;
+    const nextUrl='https://nerdclessonplanner.lovable.app'+path;
+    if(previewFrame.src!==nextUrl)previewFrame.src=nextUrl;
+    previewTabs.forEach(item=>{
+      const active=item===tab;
+      item.classList.toggle('active',active);
+      item.setAttribute('aria-pressed',String(active));
+    });
+  }));
+}
