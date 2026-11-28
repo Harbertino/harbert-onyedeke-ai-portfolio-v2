@@ -65,3 +65,29 @@ if(credentialFilters.length&&expandedCredentials.length){
     }
   }));
 }
+
+/* Unified document viewer for certificates, approval letters and programme records. */
+const evidenceViewer=document.getElementById('evidence-viewer');
+const evidenceFrame=document.getElementById('evidence-viewer-frame');
+const evidenceTitle=document.getElementById('evidence-viewer-title');
+const evidenceOpenNew=document.getElementById('evidence-open-new');
+const evidenceClose=document.getElementById('evidence-viewer-close');
+const evidenceExtensions=/\\.(pdf|jpe?g|png|webp)(?:[?#].*)?$/i;
+if(evidenceViewer&&evidenceFrame){
+  document.addEventListener('click',event=>{
+    const link=event.target.closest('a[href]');
+    if(!link||link.target==='_blank'||!evidenceExtensions.test(link.getAttribute('href')||''))return;
+    const href=link.getAttribute('href');
+    if(!href.startsWith('/'))return;
+    event.preventDefault();
+    const title=(link.textContent||link.getAttribute('aria-label')||'Portfolio evidence').trim().replace(/\\s+/g,' ').slice(0,90);
+    evidenceTitle.textContent=title||'Portfolio evidence';
+    evidenceFrame.src=href;
+    evidenceOpenNew.href=href;
+    evidenceViewer.showModal();
+  });
+  const closeEvidence=()=>{evidenceViewer.close();evidenceFrame.src='about:blank'};
+  evidenceClose?.addEventListener('click',closeEvidence);
+  evidenceViewer.addEventListener('click',event=>{if(event.target===evidenceViewer)closeEvidence()});
+  evidenceViewer.addEventListener('close',()=>{evidenceFrame.src='about:blank'});
+}
