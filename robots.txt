@@ -1,3 +1,31 @@
+# Public portfolio: permit search and retrieval crawlers.
 User-agent: *
 Allow: /
+
+# Google and Bing search indexing
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+# OpenAI search visibility (separate from model-training crawler)
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: GPTBot
+Disallow: /
+
+# Anthropic search and user-directed retrieval; training crawler kept separate
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: ClaudeBot
+Disallow: /
+
+# Perplexity search crawler
+User-agent: PerplexityBot
+Allow: /
+
 Sitemap: https://harbert-onyedeke-ai-portfolio.vercel.app/sitemap.xml
