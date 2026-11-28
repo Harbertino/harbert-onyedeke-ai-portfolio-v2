@@ -304,3 +304,13 @@
 .brand-mark.brand-avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 24%;border-radius:50%}
 .footer-brand .brand-mark.brand-avatar{width:38px;height:38px;flex-basis:38px}
 @media(max-width:680px){.brand-mark.brand-avatar{width:38px;height:38px;flex-basis:38px}}
+
+/* Search-ready public profile and answer-friendly fact section */
+.discoverability-section{scroll-margin-top:90px}
+.discoverability-intro{max-width:900px;display:grid;grid-template-columns:1fr;gap:10px;padding:30px;background:#fff;border:1px solid rgba(9,30,55,.1);border-radius:20px;box-shadow:0 14px 42px rgba(8,25,48,.05)}
+.discoverability-intro h3{margin:18px 0 0;color:#10253f;font-family:Manrope,sans-serif;font-size:1.12rem;font-weight:800}
+.discoverability-intro h3:first-child{margin-top:0}
+.discoverability-intro p{margin:0;color:#40536a;line-height:1.8;font-size:.98rem}
+.discoverability-intro a{color:#087e91;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.discoverability-intro .discoverability-note{margin-top:14px;padding-top:16px;border-top:1px solid rgba(9,30,55,.1);font-size:.88rem;color:#617187}
+@media(max-width:680px){.discoverability-intro{padding:22px 18px;border-radius:16px}.discoverability-intro h3{font-size:1.04rem}}
