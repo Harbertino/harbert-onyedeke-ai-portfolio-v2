@@ -76,7 +76,7 @@ const evidenceExtensions=/\\.(pdf|jpe?g|png|webp)(?:[?#].*)?$/i;
 if(evidenceViewer&&evidenceFrame){
   document.addEventListener('click',event=>{
     const link=event.target.closest('a[href]');
-    if(!link||link.target==='_blank'||!evidenceExtensions.test(link.getAttribute('href')||''))return;
+    if(!link||!evidenceExtensions.test(link.getAttribute('href')||''))return;
     const href=link.getAttribute('href');
     if(!href.startsWith('/'))return;
     event.preventDefault();
