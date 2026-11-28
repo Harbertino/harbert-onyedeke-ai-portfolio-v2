@@ -195,3 +195,28 @@
 .credential-logo.local{background:#fff4dc;color:#936914}.credential-logo.award{background:#fcecf3;color:#a33363}
 .credential-logo span{font:800 13px Manrope;letter-spacing:-.04em}
 @media(max-width:680px){.credential-filters{gap:6px}.credential-filter{padding:9px 11px;font-size:9px}}
+
+/* Programme Impact & Institutional Engagement — evidence-led case studies */
+.programme-impact-section{background:#f3f7f8}
+.programme-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;align-items:stretch}
+.programme-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid #dce6eb;border-radius:13px;background:#fff;box-shadow:0 13px 34px rgba(13,39,58,.06)}
+.programme-visual{min-height:145px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:25px 25px 22px;color:#fff;background:linear-gradient(130deg,#0b2037,#164c58);position:relative;isolation:isolate}
+.programme-visual:after{content:"";position:absolute;z-index:-1;width:180px;height:180px;border:1px solid rgba(255,255,255,.17);border-radius:50%;right:-35px;top:-55px;box-shadow:0 0 0 22px rgba(255,255,255,.035),0 0 0 48px rgba(255,255,255,.025)}
+.programme-visual span{font:800 29px/1 Manrope;letter-spacing:-.04em}
+.programme-visual>b{font:800 19px Manrope;color:#70e6d4;margin-top:5px}
+.programme-visual small{font-size:8px;font-weight:800;letter-spacing:.15em;color:#bfd3dc;margin-top:15px}
+.programme-evolve .programme-visual{background:linear-gradient(130deg,#102e52,#176d7b)}
+.programme-skillup .programme-visual{background:linear-gradient(130deg,#21133f,#65429a)}
+.programme-content{display:flex;flex-direction:column;flex:1;padding:22px 21px 20px}
+.programme-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;color:#087f7b;font-size:8px;font-weight:800;letter-spacing:.1em}
+.programme-content h3{font:800 18px/1.3 Manrope;color:#132d43;letter-spacing:-.025em;margin:13px 0 10px}
+.programme-content>p:not(.programme-caveat){font-size:10px;line-height:1.8;color:#607487;margin:0 0 12px}
+.programme-content ul{padding-left:17px;margin:0 0 17px;color:#526b7d;font-size:10px;line-height:1.9}
+.programme-proof{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:auto;padding:14px 13px;border:1px solid #e0e9ed;border-radius:8px;background:#f7fafb}
+.programme-proof b{font:800 9px Manrope;color:#28485c;margin-bottom:2px}
+.programme-proof a{font-size:9px;font-weight:800;color:#087f7b}
+.programme-proof span{font-size:9px;line-height:1.6;color:#718393}
+.programme-caveat{font-size:8px;line-height:1.7;color:#8795a1;margin:13px 0 0}
+.programme-footnote{margin:19px 0 0;padding:14px 16px;border-left:3px solid #0b817d;background:#e8f1f2;color:#5e7180;font-size:9px;line-height:1.75}
+@media(max-width:950px){.programme-grid{grid-template-columns:1fr 1fr}.programme-card:last-child{grid-column:1/-1}}
+@media(max-width:680px){.programme-grid{grid-template-columns:1fr}.programme-card:last-child{grid-column:auto}.programme-visual{min-height:125px}.programme-content{padding:20px 18px}.programme-content h3{font-size:17px}}
