@@ -277,3 +277,23 @@
 .evidence-viewer-bar button{width:30px;height:30px;border:0;border-radius:50%;background:#18364d;color:#fff;font-size:22px;cursor:pointer}
 .evidence-viewer iframe{width:100%;height:calc(100% - 54px);border:0;background:#f5f7f8}
 @media(max-width:760px){.recruitment-grid{grid-template-columns:1fr}.validation-register-grid{grid-template-columns:1fr}.evidence-viewer{width:96vw;height:88vh}.evidence-viewer-bar{padding:0 10px}.evidence-viewer-bar strong{font-size:10px}}
+
+
+/* Credential evidence gallery — original issuer images, responsive and evidence-first */
+.credential-evidence{margin:30px 0 24px;padding:clamp(20px,3vw,28px);border:1px solid #dce6eb;border-radius:13px;background:linear-gradient(145deg,#f3f7f8,#fff)}
+.credential-evidence-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:20px}
+.credential-evidence-heading h3{font:800 clamp(21px,2.5vw,28px)/1.2 Manrope;color:#142f44;letter-spacing:-.035em;margin:8px 0 0}
+.credential-evidence-heading>p{max-width:360px;margin:0;color:#718293;font-size:10px;line-height:1.75}
+.credential-evidence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.credential-evidence-card{overflow:hidden;display:flex;flex-direction:column;min-width:0;border:1px solid #dfe7eb;border-radius:10px;background:#fff;box-shadow:0 8px 22px rgba(16,42,60,.045)}
+.credential-evidence-card>a:first-child{display:grid;place-items:center;height:190px;padding:10px;background:#eef2f4;overflow:hidden}
+.credential-evidence-card img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .25s}
+.credential-evidence-card>a:first-child:hover img{transform:scale(1.025)}
+.credential-evidence-card>div{display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:14px 15px}
+.credential-evidence-card b{font:800 10px Manrope;color:#18364b}
+.credential-evidence-card span{font-size:9px;line-height:1.65;color:#6c7e8d}
+.credential-evidence-card>div>a{margin-top:3px;color:#087f7b;font-size:9px;font-weight:800;text-decoration:none}
+.credential-evidence-note{margin:16px 0 0;color:#84929e;font-size:9px;line-height:1.7}
+.credential-content>a+a{display:inline-block;margin:7px 10px 0 0}
+@media(max-width:900px){.credential-evidence-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.credential-evidence-heading{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.credential-evidence{padding:16px}.credential-evidence-grid{grid-template-columns:1fr}.credential-evidence-card>a:first-child{height:230px}.credential-evidence-card>div{padding:14px}}
